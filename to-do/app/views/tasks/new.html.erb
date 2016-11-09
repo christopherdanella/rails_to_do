@@ -1,0 +1,6 @@
+<h1>Add a task</h1>
+
+<%= form_for :task, url: '/task' do |f| %>
+  Task: <%= f.text_field :title %>
+  <%= f.submit "Add Task" %> <br>
+<% end %>

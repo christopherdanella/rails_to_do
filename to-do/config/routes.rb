@@ -9,4 +9,8 @@ Rails.application.routes.draw do
 
   get '/signup' => 'users#new'
   post '/users'  => 'users#create'
+
+  get '/task' => 'tasks#new'
+  post '/task' => 'tasks#create'
+  get '/task/:id' => 'tasks#show'
 end
